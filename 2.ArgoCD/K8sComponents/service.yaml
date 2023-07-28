@@ -4,6 +4,7 @@ metadata:
   name: basic-app-svc
   namespace: basic-ns
 spec:
+  type: ClusterIP
   selector:
     app: basic-app
   ports:
