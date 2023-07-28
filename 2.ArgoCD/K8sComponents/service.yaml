@@ -8,6 +8,6 @@ spec:
     app: basic-app
   ports:
     - name: 8080-tcp
-      port: 8080
+      port: 8000
       protocol: TCP
-      targetPort: 8080	
+      targetPort: 8000
