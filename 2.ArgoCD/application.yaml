@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/ThomasSojan/KubernetesAdventure.git
     targetRevision: main
-    path: 2.ArgoCD
+    path: 2.ArgoCD/K8sComponents
   destination: 
     server: https://kubernetes.default.svc
     namespace: basic-ns
