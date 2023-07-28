@@ -1,0 +1,22 @@
+resources:
+  - ../../application
+
+namespace: kustomize-ns-dev
+
+commonLabels:
+  environment: dev
+
+patches:
+- path: replica_count.yaml
+  target:
+    kind: Deployment
+- path: resource_limit.yaml
+  target:
+    kind: Deployment
+
+configMapGenerator:
+- name: basic-app-cm
+  namespace: kustomize-ns
+  behavior: replace
+  files:
+  - config/.env
